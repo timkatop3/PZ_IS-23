@@ -3,16 +3,23 @@
 # в диапазоне 1-5) и длина отрезка в этих единицах (вещественное число). Найти
 # длину отрезка в метрах.
 
-len_num = int(input())
-length = float(input())
+try:
+    len_num = int(input())
+    length = float(input())
 
-if len_num == 1:
-    print(length / 10.0)
-elif len_num == 2:
-    print(length * 1000.0)
-elif len_num == 3:
-    print(length)
-elif len_num == 4:
-    print(length / 1000.0)
-elif len_num == 5:
-    print(length / 100)
+except ValueError:
+    print('Only decimal and float')
+
+else:
+    if len_num == 1:
+        print(length / 10.0)
+    elif len_num == 2:
+        print(length * 1000.0)
+    elif len_num == 3:
+        print(length)
+    elif len_num == 4:
+        print(length / 1000.0)
+    elif len_num == 5:
+        print(length / 100)
+    else:
+        print('no option with number', len_num)
