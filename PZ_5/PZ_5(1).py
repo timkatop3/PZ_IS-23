@@ -6,4 +6,4 @@ def a(num):
     for i in range(0 , num):
         print('*' * i)
 
-a(int(input()))
+a(int(input('Введите число: ')))
