@@ -6,4 +6,4 @@ def a(num):
     for i in range(0 , num):
         print('*' * i)
 
-a(int(input('Введите число: ')))
+a(int(input('Введите число и бужет картинка из звездочек размером x на x: ')))
