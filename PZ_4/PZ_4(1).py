@@ -2,14 +2,13 @@
 # до В включительно.
 
 c = 0
-
 try:
-    a = int(input())
-    b = int(input())
+    a = int(input('Введите А: '))
+    b = int(input('Введите B: '))
 
     for i in range(a, b+1):
         c = c + i**2
-    print(c)
+    print('сумма квадратов всех целых чисел от А до В включительно', c)
 
 except ValueError:
     print('Only decimal')
