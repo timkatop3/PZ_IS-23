@@ -1,12 +1,14 @@
 #Дано целое число N (>0) и символ C. Вывести строку длины N, которая состоит из
 #символов C.
+try:
+    N = int(input('Введите число: '))
+    C = input('Введите символ: ')
 
-N = int(input('Введите число: '))
-C = input('Введите символ: ')
+    result = ''
 
-result = ''
+    for i in range(N):
+        result += C
 
-for i in range(N):
-    result += C
-
-print(result)
+    print(result)
+except ValueError:
+    print('Wrong type')
