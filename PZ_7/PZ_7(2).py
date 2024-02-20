@@ -1,8 +1,6 @@
 #Дана строка-предложение с избыточными пробелами между словами.
 #Преобразовать ее так, чтобы между словами был ровно один пробел.
-try:
-    s = input('Введите строку: ')
-    result = s.split()
-    print(" ".join(result))
-except ValueError:
-    print('Only str')
+
+s = input('Введите строку: ')
+result = s.split()
+print(" ".join(result))
