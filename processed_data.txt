@@ -1,4 +1,0 @@
-Gived data: 5 -3 12 -8 15 6 -2 10
-Length of data: 8
-index of min last given element: 3
-Sum of second part tat > 10: 15
