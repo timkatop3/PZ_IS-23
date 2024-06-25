@@ -20,7 +20,7 @@ import os
 print('-' * 100)
 print("Пункт 1")
 
-os.chdir("./pz11")  
+os.chdir("./PZ_11")  
 files = [] 
 
 
@@ -48,16 +48,16 @@ os.mkdir("test")  # создаем папку test
 os.mkdir("test/test1")  # создаем папку test1 внутри папки test
 
 # копируем файлы из ПЗ6 в папку test
-with open("./pz6/pz6.pdf", "rb") as src_file:
-    with open("test/pz6.pdf", "wb") as dst_file:
+with open("./PZ_6/PZ_6.pdf", "rb") as src_file:
+    with open("test/PZ_6.pdf", "wb") as dst_file:
         dst_file.write(src_file.read())
 
-with open("./pz6/pz6_1.py", "r", encoding="utf-8") as src_file:
-    with open("test/pz6_1.py", "w", encoding="utf-8") as dst_file:
+with open("./PZ_6/PZ_6(1).py", "r", encoding="utf-8") as src_file:
+    with open("test/PZ_6(1).py", "w", encoding="utf-8") as dst_file:
         dst_file.write(src_file.read())
 
 # копируем файл из ПЗ7 в папку test1 и переименовываем его в test.txt
-with open("./pz7/pz7_1.py", "r", encoding="utf-8") as src_file:
+with open("./PZ_7/PZ_7(1).py", "r", encoding="utf-8") as src_file:
     with open("test/test1/test.txt", "w", encoding="utf-8") as dst_file:
         dst_file.write(src_file.read())
 
@@ -80,7 +80,7 @@ print("Пункт 3")
 
 
 
-os.chdir("./pz11")
+os.chdir("./PZ_11")
 
 shortest_filename = ""
 for filename in os.listdir():
